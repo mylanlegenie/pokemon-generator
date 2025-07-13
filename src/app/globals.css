@@ -1,7 +1,13 @@
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+@layer utilities {
+  .font-blaster {
+    font-family: var(--font-blaster), sans-serif;
+  }
+}
+
 
 @theme inline {
   --color-background: var(--background);
